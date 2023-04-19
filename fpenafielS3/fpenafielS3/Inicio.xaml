@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fpenafielS3.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INICIO" FontSize="24" HorizontalTextAlignment="Center" />
+           
+            <!--Cargando imagen desde internet-->
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"/>
+            
+            <!--Cargando imagen desde la computadora-->
+            <Image Source="Ecuador.jpg" WidthRequest="100" HeightRequest="100"/>
+
+            <Entry x:Name="txtDato" Placeholder="Ingrese un dato"/>
+
+            <Entry x:Name="txtDatoDos" Placeholder="Ingrese dato dos"/>
+
+            <Button x:Name="btnAbrir" Text="Abrir ventana dos" Clicked="btnAbrir_Clicked"/>
+            <ImageButton Source="Ecuador.png" Clicked="ImageButton_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
